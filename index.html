@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container"> 
+        <div class="row mt-3">
+            <div class="col-12 col-sm-12 col-md-6 offset-md-3">
+                <form id="estado_form">
+                    <div class="form-group"> 
+                        <select class="form-control" id="relevancia">
+                            <option value="1">Triste</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Feliz</option> 
+                        </select> 
+                      </div>
+                      <div class="form-group"> 
+                        <input type="text" class="form-control" id="input_estado"   placeholder="Escribe tu estado"> 
+                      </div>  
+                    <button id="publicar_estado"   class="btn btn-primary">Publicar</button> 
+                </form>
+
+            </div>
+        </div>
+        <hr>
+        <div id="estados"></div>
+    </div>
+
+    
+
+    <template id="template_estado">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 offset-md-2">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Relevancia</h4>
+                    <p>Descripción del estado</p>
+                    <hr>
+                    <p class="mb-0">Publicado el 17/02/2021.</p>
+                </div>
+            </div>
+        </div> 
+    </template> 
+
+    <script src="public/js/index.js"></script>
+
+</body>
+</html>
