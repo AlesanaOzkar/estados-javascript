@@ -26,9 +26,6 @@ function onClick(evt){
             localStorage.setItem('estados',JSON.stringify( [...[],estado]))
         else
             localStorage.setItem('estados',JSON.stringify( [...estados_almacenados,estado]  ))
-  
-      
-      // estadoElemento.innerHTML = renderizarEstado(estado);
    
         renderizarTodo();
     }   
